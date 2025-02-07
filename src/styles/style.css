@@ -205,3 +205,36 @@ p {
 .payment-methods li {
     margin-bottom: 10px;
 }
+/* Стили для корзины */
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-items li:last-child {
+    border-bottom: none;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    text-align: center;
+}
+#checkout-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#checkout-btn:hover {
+    background-color: #218838;
+}
