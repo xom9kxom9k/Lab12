@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>МастерОК - Магазин инструментов</title>
+    <title>Корзина</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="public/images/местерок.png" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap" rel="stylesheet">
@@ -26,11 +26,22 @@
     <main>
         <div class="container">
             <h1>Корзина</h1>
-            <ul id="cart-items">
-                
+            <ul id="cart-items"> 
+                <li>
+                    <span>Аккумуляторный шуруповерт MAKITA - 11990 руб.</span>
+                    <button class="remove-btn">Удалить</button>
+                </li>
+                <li>
+                    <span>Тепловая пушка электрическая - 29990 руб.</span>
+                    <button class="remove-btn">Удалить</button>
+                </li>
+                <li>
+                    <span>Лопата штыковая - 1390 руб.</span>
+                    <button class="remove-btn">Удалить</button>
+                </li>
             </ul>
             <div class="cart-summary">
-                <p>Товаров в корзине: <span id="item-count">0</span></p>
+                <p>Товаров в корзине: <span id="item-count">3</span></p>
                 <button id="checkout-btn">Оформить заказ</button>
             </div>
         </div>

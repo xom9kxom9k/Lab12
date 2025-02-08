@@ -238,3 +238,14 @@ p {
 #checkout-btn:hover {
     background-color: #218838;
 }
+.remove-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
