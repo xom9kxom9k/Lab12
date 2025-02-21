@@ -52,6 +52,26 @@ header nav ul li a {
 header nav ul li a:hover {
     text-decoration: underline;
 }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
 
 .products {
     display: flex;
@@ -133,6 +153,7 @@ header nav ul li a:hover {
     font-size: 14px;
     color: #555;
 }
+
 /* Стили для контактов */
 .container {
     max-width: 800px;
@@ -181,6 +202,7 @@ p {
     font-size: 14px;
     color: #555;
 }
+
 /* Стили для доставки */
 .step {
     margin-bottom: 20px;
@@ -248,4 +270,111 @@ p {
 
 .remove-btn:hover {
     background-color: #c82333;
+}
+
+/* Стили для футер */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.contact-info, .social-links {
+    flex: 1;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    transition: opacity 0.3s ease;
+}
+
+.social-links img:hover {
+    opacity: 0.7;
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    /* Шапка */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Карточки товаров */
+    .products {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    /* Блоки акций */
+    .promotions-container {
+        flex-direction: column;
+    }
+
+    .promotion-block {
+        width: 100%;
+    }
+
+    /* Контейнеры и тексты */
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Корзина */
+    #cart-items li {
+        flex-direction: column;
+    }
+
+    .cart-summary {
+        text-align: left;
+    }
+
+    /* Футер */
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .contact-info, .social-links {
+        margin-bottom: 20px;
+    }
 }
