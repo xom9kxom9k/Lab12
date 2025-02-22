@@ -4,6 +4,13 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 header {
@@ -306,7 +313,7 @@ footer {
     opacity: 0.7;
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and ( 401px <= width <= 960px ) {
     /* Шапка */
     header {
         flex-direction: column;
@@ -367,6 +374,13 @@ footer {
 
     .cart-summary {
         text-align: left;
+    }
+    li {
+        gap: 20px;
+    }
+    .remove-btn {
+        width: 100px;
+        margin-left: auto;
     }
 
     /* Футер */
