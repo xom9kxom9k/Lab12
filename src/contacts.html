@@ -4,77 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link href="public/images/местерок.png" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div class="logo">
-            <img src="public/images/местерок.png" alt="Логотип МастерОК">
-            <a href="/" class="logo-link">МастерОК</a>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="sale.html">Акции ▾</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Подарок папе</a></li>
-                        <li><a href="#">Супер цены</a></li>
-                        <li><a href="#">Постоянным клиентам</a></li>
-                    </ul>
-                </li>
-                <li><a href="contacts.html">Контакты</a></li>
-                <li><a href="delivery.html">Доставка</a></li>
-                <li><a href="basket.html">Корзина</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+<body class="d-flex flex-column min-vh-100">
+    <header class="custom-header py-3">
         <div class="container">
-            <h1>Контакты</h1>
-    
-            <div class="contact-info">
-                <h2>Оформить заказ и узнать наличие</h2>
-                <p>+7 (8422) 99-99-90<br>8 800 11-11-11</p>
-                <p>ПН - ВС: 8:00 - 20:00</p>
-                <p>Эл. почта для заказа: <a href="mailto:masterok@mail.ru">masterok@mail.ru</a></p>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <div class="logo d-flex align-items-center">
+                        <img src="public/images/местерок.png" alt="Логотип МастерОК" class="me-2" style="height: 50px;">
+                        <a href="/" class="text-decoration-none text-white fs-4 fw-bold">МастерОК</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown me-4">
+                                <div class="d-flex align-items-center">
+                                    <a href="sale.html" class="nav-link text-white">Акции</a>
+                                    <span class="nav-link text-white dropdown-toggle-arrow" data-bs-toggle="dropdown">▾</span>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Подарок папе</a></li>
+                                        <li><a class="dropdown-item" href="#">Супер цены</a></li>
+                                        <li><a class="dropdown-item" href="#">Постоянным клиентам</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item me-4"><a href="contacts.html" class="nav-link text-white">Контакты</a></li>
+                            <li class="nav-item me-4"><a href="delivery.html" class="nav-link text-white">Доставка</a></li>
+                            <li class="nav-item">
+                                <a href="basket.html" class="nav-link text-white">
+                                    <i class="bi bi-cart"></i> Корзина
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="py-4">
+        <div class="container">
+            <h1 class="text-center mb-4">Контакты</h1>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">Оформить заказ и узнать наличие</h2>
+                    <p class="card-text"><i class="bi bi-telephone"></i> +7 (8422) 99-99-90</p>
+                    <p class="card-text">ПН - ВС: 8:00 - 20:00</p>
+                    <p class="card-text"><i class="bi bi-envelope"></i> <a href="mailto:masterok@mail.ru">masterok@mail.ru</a></p>
+                </div>
             </div>
-    
-            <div class="contact-info-button">
-                <h2>Обратная связь</h2>
-                <p>Оставьте свои вопросы, пожелания и комментарии</p>
-                <a href="#" class="write-button">НАПИСАТЬ</a>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">Обратная связь</h2>
+                    <p class="card-text">Оставьте свои вопросы, пожелания и комментарии</p>
+                    <a href="#" class="btn btn-warning">НАПИСАТЬ</a>
+                </div>
             </div>
-    
-            <div class="requisites">
-                <h2>Реквизиты</h2>
-                <p>Наименование: ООО «МастерОК»</p>
-                <p>Юридический адрес: 432030, Ульяновская область, г. Ульяновск, ул. Северный Венец, д. 32, к. 3, офис 431</p>
-                <p>ИНН: 6666666666</p>
-                <p>ОГРН: 1111111111111</p>
-                <p>КПП: 666666666</p>
-                <p>Расчетный счет: 40702810154400028559</p>
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Реквизиты</h2>
+                    <p class="card-text">Наименование: ООО «МастерОК»</p>
+                    <p class="card-text"><i class="bi bi-house-door"></i> Адрес: г. Ульяновск, ул. Северный венец, д. 32, к. 3</p>
+                    <p class="card-text">ИНН: 6666666666</p>
+                    <p class="card-text">ОГРН: 1111111111111</p>
+                    <p class="card-text">КПП: 666666666</p>
+                    <p class="card-text">Расчетный счет: 40702810154400028559</p>
+                </div>
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <h3>Контактная информация</h3>
-                <p>Адрес: г. Ульяновск, ул. Северный венец, д. 32, к. 3</p>
-                <p>Телефон: +7 (999) 99-99-90</p>
-                <p>Email: masterok@mail.ru</p>
-            </div>
-            <div class="social-links">
-                <h3>Мы в соцсетях</h3>
-                <a href="https://t.me/" target="_blank">
-                    <img src="public/images/tg.png" alt="Telegram">
-                </a>
-                <a href="https://vk.com/" target="_blank">
-                    <img src="public/images/vk.png" alt="VK">
-                </a>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h3>Контактная информация</h3>
+                    <p>Адрес: г. Ульяновск, ул. Северный венец, д. 32, к. 3</p>
+                    <p>Телефон: +7 (999) 99-99-90</p>
+                    <p>Email: masterok@mail.ru</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h3>Мы в соцсетях</h3>
+                    <a href="https://t.me/" target="_blank" class="me-2">
+                        <img src="public/images/tg.png" alt="Telegram" style="width: 32px;">
+                    </a>
+                    <a href="https://vk.com/" target="_blank">
+                        <img src="public/images/vk.png" alt="VK" style="width: 32px;">
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

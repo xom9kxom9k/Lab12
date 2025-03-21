@@ -1,7 +1,13 @@
 {
   "name": "masterok",
-  "version": "0.0.0",
+  "version": "0.3.0",
   "devDependencies": {
+    "eslint": "8.56.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "10.0.2",
+    "eslint-plugin-html": "8.1.2",
+    "eslint-plugin-import": "2.31.0",
+    "eslint-plugin-prettier": "5.2.3",
     "sass-embedded": "^1.83.4",
     "vite": "^6.1.0"
   },
@@ -10,6 +16,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "5.3.3",
+    "bootstrap-icons": "1.11.3"
   },
   "type": "module"
 }
