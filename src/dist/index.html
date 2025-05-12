@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МастерОК - Магазин инструментов</title>
+    <script src="index.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="public/images/местерок.png" rel="shortcut icon">
+    <link href="/assets/%D0%BC%D0%B5%D1%81%D1%82%D0%B5%D1%80%D0%BE%D0%BA-Cy4sklml.png" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap" rel="stylesheet">
-    <script type="module" src="scripts/controller.js"></script>
-    <script type="module" src="index.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-CNnqpty-.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
     <header class="custom-header py-3">
@@ -18,7 +17,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <div class="logo d-flex align-items-center">
-                        <img src="public/images/местерок.png" alt="Логотип МастерОК" class="me-2" style="height: 50px;">
+                        <img src="/assets/%D0%BC%D0%B5%D1%81%D1%82%D0%B5%D1%80%D0%BE%D0%BA-Cy4sklml.png" alt="Логотип МастерОК" class="me-2" style="height: 50px;">
                         <a href="/" class="text-decoration-none text-white fs-4 fw-bold">МастерОК</a>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +25,6 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item me-4"><a href="add.html" class="nav-link text-white">Добавить</a></li>
                             <li class="nav-item dropdown me-4">
                                 <div class="d-flex align-items-center">
                                     <a href="sale.html" class="nav-link text-white">Акции</a>
@@ -69,10 +67,6 @@
                         <label for="productPrice" class="form-label">Стоимость товара</label>
                         <input type="number" class="form-control" id="productPrice" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="productImageUrl" class="form-label">URL картинки товара</label>
-                        <input type="url" class="form-control" id="productImageUrl" required>
-                    </div>
                     <button type="submit" class="btn btn-primary">Добавить товар</button>
                 </form>
             </div>
@@ -81,8 +75,69 @@
     </div>
     <main class="flex-grow-1 py-4">
         <section class="container">
-            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 product-list">
-            </div>        
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/assets/%D0%B4%D1%80%D0%B5%D0%BB%D1%8C%D1%88%D1%83%D1%80%D1%83%D0%BF%D0%BE%D0%B2%D0%B5%D1%80%D1%82-ChReofwZ.jpg" class="card-img-top" alt="Шуруповерт" width="200" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title">Аккумуляторный шуруповерт MAKITA</h5>
+                            <p class="card-text text-warning fw-bold">11990 руб.</p>
+                            <button class="btn btn-warning" data-id="1" data-name="Аккумуляторный шуруповерт MAKITA" data-price="11990">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/assets/%D1%81%D0%BD%D0%B5%D0%B3%D0%BE%D1%83%D0%B1%D0%BE%D1%80%D1%89%D0%B8%D0%BA-DmRudu9r.jpg" class="card-img-top" alt="снегоуборщик" width="200" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title">Снегоуборщик PATRIOT с установленным ковшом</h5>
+                            <p class="card-text text-warning fw-bold">57990 руб.</p>
+                            <button class="btn btn-warning" data-id="2" data-name="Снегоуборщик PATRIOT" data-price="57990">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/assets/%D0%BF%D1%83%D1%88%D0%BA%D0%B0-QSFn7M2R.jpg" class="card-img-top" alt="пушка" width="200" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title">Тепловая пушка электрическая</h5>
+                            <p class="card-text text-warning fw-bold">29990 руб.</p>
+                            <button class="btn btn-warning" data-id="3" data-name="Тепловая пушка" data-price="29990">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/assets/%D1%88%D0%BB%D0%B8%D1%84-DsUuwNgD.jpg" class="card-img-top" alt="шлиф" width="200" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title">Угловая шлифмашина сетевая</h5>
+                            <p class="card-text text-warning fw-bold">9690 руб.</p>
+                            <button class="btn btn-warning" data-id="4" data-name="Угловая шлифмашина" data-price="9690">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/assets/%D0%BB%D0%BE%D0%BF%D0%B0%D1%82%D0%B0%D1%88%D1%82%D1%8B%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F-D1ZqRWk8.jpg" class="card-img-top" alt="лопаташтыковая" width="200" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title">Лопата штыковая</h5>
+                            <p class="card-text text-warning fw-bold">1390 руб.</p>
+                            <button class="btn btn-warning" data-id="5" data-name="Лопата штыковая" data-price="1390">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/assets/%D1%82%D0%B5%D0%BF%D0%BB%D0%BE%D0%B2%D0%B0%D1%8F%D0%BF%D1%83%D1%88%D0%BA%D0%B0-CrDKB0BK.jpg" class="card-img-top" alt="тепловаяпушка" width="200" height="300">
+                        <div class="card-body">
+                            <h5 class="card-title">Теппловая пушка газовая</h5>
+                            <p class="card-text text-warning fw-bold">7010 руб.</p>
+                            <button class="btn btn-warning" data-id="6" data-name="Теппловая пушка" data-price="7010">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </section>
     </main>
     <footer class="bg-dark text-white py-4">
@@ -97,10 +152,10 @@
                 <div class="col-md-6 text-md-end">
                     <h3>Мы в соцсетях</h3>
                     <a href="https://t.me/" target="_blank" class="me-2">
-                        <img src="public/images/tg.png" alt="Telegram" style="width: 32px;">
+                        <img src="/assets/tg-Cu593HRj.png" alt="Telegram" style="width: 32px;">
                     </a>
                     <a href="https://vk.com/" target="_blank">
-                        <img src="public/images/vk.png" alt="VK" style="width: 32px;">
+                        <img src="/assets/vk-CPKdzB-R.png" alt="VK" style="width: 32px;">
                     </a>
                 </div>
             </div>
